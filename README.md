@@ -2,7 +2,7 @@
 
 This trading bot is designed to automate cryptocurrency trading strategies, leveraging market data to execute trades with the aim of optimizing profitability and minimizing risk. It supports several popular cryptocurrency exchanges through the CCXT library, provides a framework for implementing custom trading strategies, and incorporates essential risk management and notification features.
 
-## Features
+## Features - IN PROGRESS
 
 - **Support for Multiple Exchanges**: Works with leading exchanges such as Binance and Coinbase.
 - **Predefined and Custom Trading Strategies**: Comes with basic strategies like Moving Average Crossover and allows for easy integration of user-defined strategies.
