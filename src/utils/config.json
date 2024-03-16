@@ -1,0 +1,31 @@
+{
+  "exchangeSettings": {
+    "binance": {
+      "apiKey": "your_binance_api_key",
+      "secret": "your_binance_api_secret",
+      "enableRateLimit": true
+    }
+  },
+  "tradingParameters": {
+    "symbol": "BTC/USDT",
+    "timeframe": "1h",
+    "paperTrading": true
+  },
+  "strategySettings": {
+    "movingAverage": {
+      "shortTermPeriod": 7,
+      "longTermPeriod": 25
+    }
+  },
+  "riskManagement": {
+    "stopLossPercentage": 5,
+    "maxTradeAmountPercentage": 10,
+    "maxConcurrentTrades": 2
+  },
+  "notificationSettings": {
+    "telegram": {
+      "botToken": "your_telegram_bot_token",
+      "chatId": "your_telegram_chat_id"
+    }
+  }
+}
