@@ -3,7 +3,7 @@ import time
 
 
 class MarketDataFetcher:
-    def __init__(self, exchange_id='coinbase'):
+    def __init__(self, exchange_id='binance'):
         self.exchange = getattr(ccxt, exchange_id)()
         self.last_request_time = 0
         self.rate_limit = self.exchange.rateLimit / 1000
@@ -32,3 +32,6 @@ class MarketDataFetcher:
 
     def fetch_recent_trades(self, symbol):
         return self.safe_fetch(self.exchange.fetchTrades, symbol)
+
+    def fetch_currencies(self):
+        return self.safe_fetch(self.exchange.fetchCurrencies)
