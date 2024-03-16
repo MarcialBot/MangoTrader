@@ -58,6 +58,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 This trading bot is provided as-is, and it uses speculative trading strategies that can result in losses. Always use caution and trade responsibly. The developers assume no responsibility for financial losses incurred using this software. Trading cryptocurrencies involves significant risk and can result in the loss of your invested capital.
 
----
-
-This README provides a basic overview of your trading bot project, how to get started with it, and guidelines for contributing. Adjust the content as necessary to fit your project's specifics and ensure that all links (e.g., to the LICENSE file) are correct based on your repository's structure.
