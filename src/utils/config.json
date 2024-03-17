@@ -4,6 +4,11 @@
       "apiKey": "your_binance_api_key",
       "secret": "your_binance_api_secret",
       "enableRateLimit": true
+    },
+    "coinbase": {
+      "apiKey": "your_coinbase_api_key",
+      "secret": "your_coinbase_secret",
+      "enableRateLimit": true
     }
   },
   "tradingParameters": {

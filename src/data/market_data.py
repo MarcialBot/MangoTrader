@@ -1,10 +1,18 @@
 import ccxt
 import time
+from utils.config_loader import get_exchange_config
 
 
 class MarketDataFetcher:
-    def __init__(self, exchange_id='binance'):
-        self.exchange = getattr(ccxt, exchange_id)()
+    def __init__(self, exchange_id):
+        config = get_exchange_config()
+        exchange_class = getattr(ccxt, exchange_id)
+
+        self.exchange = exchange_class({
+            'apiKey': config[exchange_id]['apiKey'],
+            'secret': config[exchange_id]['secret'],
+            'enableRateLimit': True
+        })
         self.last_request_time = 0
         self.rate_limit = self.exchange.rateLimit / 1000
 

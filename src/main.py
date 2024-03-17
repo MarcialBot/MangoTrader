@@ -5,7 +5,7 @@ from utils.logger import log_info
 
 
 def main():
-    fetcher = MarketDataFetcher()
+    fetcher = MarketDataFetcher("coinbase")
     symbol = 'BTC/USDT'
     last_price = fetcher.fetch_ticker(symbol)
     log_info(f"Last price of {symbol}: {last_price}")
